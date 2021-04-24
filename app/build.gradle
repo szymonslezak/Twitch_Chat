@@ -1,0 +1,106 @@
+plugins {
+    id 'com.android.application'
+    id "androidx.navigation.safeargs"
+}
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    buildFeatures{
+        viewBinding true
+        dataBinding true
+    }
+
+    defaultConfig {
+        applicationId "pl.edu.uwr.pum.footballapp"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.32"
+    // app
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    // ui
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    // navigation
+    implementation "androidx.navigation:navigation-fragment:2.3.3"
+    implementation "androidx.navigation:navigation-ui:2.3.3"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    // rxjava
+    implementation "io.reactivex.rxjava3:rxjava:3.0.0"
+    implementation "io.reactivex.rxjava3:rxandroid:3.0.0"
+    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
+    //implementation "io.reactivex.rxjava2:rxjava:2.2.21"
+    // glide
+    implementation "com.github.bumptech.glide:glide:4.10.0"
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    // Room
+    implementation 'androidx.room:room-runtime:2.3.0-beta01'
+    annotationProcessor "androidx.room:room-compiler:2.3.0-beta01"
+    androidTestImplementation 'androidx.room:room-testing:2.3.0-beta01'
+
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.2.0'
+
+    // Preferences
+    implementation 'androidx.preference:preference:1.1.1'
+
+    // Palette
+    implementation 'com.android.support:palette-v7:30.0.3'
+
+    // MultiDex
+    implementation "androidx.multidex:multidex:2.0.1"
+    //svg
+    implementation 'com.caverock:androidsvg-aar:1.4'
+
+    //okhttp
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.22' //gif drawables
+
+
+    implementation("io.coil-kt:coil:1.2.0")
+    implementation("io.coil-kt:coil-gif:1.2.0")
+    implementation( "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.0.1")
+
+
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

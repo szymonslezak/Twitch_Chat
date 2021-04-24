@@ -1,0 +1,47 @@
+
+Twtich chat apk:
+
+
+Założenia:
+	Uwtorzenia aplikacji do obsługi czastu twitchowego na androidzie.
+	
+Wykorzystane techologie:
+	Java/Kotlin  android, retrofit
+	
+
+
+
+
+Harnomogram
+
+	31.03 Raport 1:
+	#klijent IRC
+		-Utworzenie klienta IRC potrzebnego do komunikacji /done 
+		-Zaadaptowanie klienta IRC do obsługi czatu Twtichowego /done
+		-Logowanie do twitch poprzez oauth token /semi-done
+		-Obsługa wysyłania wiadomości /done
+		-Podświetlania wiadomości zawierającą nazwę użytkownika /done
+		-Prowizoryczne wybieranie aktywnego czatu (poprzez input textowy) /done
+		-? Utworzenie kanału, w którym będą wyświetlane wiadomości zawierające nazwę użytkownika (jeśli obsługiwane byłoby wiele kanałów mogłoby to być kosztowne, wyjdzie w praktyce) //etap 3 zależy od poprzednich 2
+		
+	21.04 Report 2:
+	#Obsługa emotikon
+		-Dokończenie czego się nie zdążyło z Raportu 1  /done
+		-Pobieranie twitchowych emotek globalnych, jak i unikalnych dla kanałów //duże problemy
+		-Pobieranie 3rd party emotek globalnych, jak i unikalnych dla kanałów /done
+		-Zastępowanie fragmentów wiadomości których zawartość jest jednakowa z nazwą emotki, poprzez jej zdjęcie/ bądź gif /done
+		-Obsługa gifów /done but bad
+		-? Obsługa emotek o niestandarowych rozmiarach (nie jest pewne) /done
+		-? Obsługa emotek które pojawiają się w niestandarowym miejscu (nie jest pewne) (przykładowo emotka cofająca się o o swój rozmiar w lewo itp) /done
+		- Optymalizacjia pamięciowa jak i operacyjna (pobieranie w każdym wywołaniu odpada, otwieranie z plików również jest kosztowe) /done
+		
+	12.05 Raport 3:
+	#GUI
+	- GUI
+	- Możliwość szybkiego kopiowania wiadomość
+	- Możliwość zmiany aktualnego kanału poprzez swipe lub kafelki 
+	-? Możliwość ustawainia interwału z jakim będzie wysyłane zapytanie o pobranie czatu
+	-  Ułatwienia obsługi
+	
+	
+

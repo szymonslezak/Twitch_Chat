@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FootballApp</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="founded">Founded: </string>
+    <string name="phone">Phone: </string>
+    <string name="address">Address: </string>
+    <string name="venue">Venue: </string>
+    <string name="clubColors">Colors: </string>
+    <string name="dateOfBirth">Birth date: </string>
+    <string name="countryOfBirth">Born in: </string>
+    <string name="nationality">Nationality: </string>
+    <string name="toggleSquad">Toggle Squad: </string>
+    <string name="viewMatches">View Matches: </string>
+    <string name="halfTime">Half Time: </string>
+    <string name="goals">GOALS </string>
+    <string name="topScorers">Top Scorers </string>
+    <string name="ChangeMode">CHANGE TABLE </string>
+    <string name="Matches">Matches </string>
+</resources>
